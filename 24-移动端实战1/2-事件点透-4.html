@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>2-事件点透</title>
+  <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #box{
+                position: absolute;
+                top:0;
+                width: 200px;
+                height: 200px;
+                background: rgba(0,255,0,0.5);
+            }
+</style>
+    <script>
+        document.addEventListener('touchstart',function (e) {
+            e.preventDefault();
+        })
+    </script>
+</head>
+<body>
+  <a href="http://www.baidu.com" id="oA">百度</a>
+     <div id="box"></div>
+     <script>
+         box.ontouchstart = function () {
+             this.innerHTML = '被点击啦 . . .';
+             this.style.display = 'none';
+         }
+         oA.ontouchstart = function () {
+             window.location.href = 'http://www.mi.com';
+         }
+     </script>
+</body>
+</html>

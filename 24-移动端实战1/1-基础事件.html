@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>基础事件</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+        }
+    div{
+        width: 200px;
+        height: 200px;
+        background:gold;
+        }
+</style>
+</head>
+<body>
+        <div id="box"></div>
+        <script>
+            box.ontouchstart = function() {
+              this.style.background = 'red';
+            };
+            // 通过on的方式添加touch事件在谷歌模拟器下无效
+        </script>
+</body>
+</html>

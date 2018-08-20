@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>基础事件</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+        }
+    div{
+        width: 200px;
+        height: 200px;
+        background:gold;
+        }
+</style>
+</head>
+<body>
+        <div id="box"></div>
+        <script>
+           box.addEventListener('touchstart',fn1)
+            box.addEventListener('touchstart',fn2)
+             function fn1() {
+              this.style.background = 'red';
+            };
+
+                    function fn2() {
+                     this.innerHTML='red';
+                   };
+        </script>
+</body>
+</html>

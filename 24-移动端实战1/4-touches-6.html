@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>4-touches</title>
+   <style>
+          * {
+              margin: 0;
+              padding: 0;
+          }
+            #box{
+                      position: absolute;
+                      top:0;
+                      width: 200px;
+                      height: 200px;
+                      background: rgba(0,255,0,0.5);
+                  }
+      </style>
+</head>
+<body>
+     <div id="box"></div>
+        <script>
+            box.addEventListener('touchend',function (e) {
+                this.innerHTML = e.changedTouches[0].clientY;
+                })
+            </script>
+</body>
+</html>

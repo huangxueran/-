@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>基础事件</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+        }
+    div{
+        width: 200px;
+        height: 200px;
+        background:gold;
+        }
+</style>
+<script >
+        document.addEventListener('touchstart',function (e) {
+                e.preventDefault();
+            })
+</script>
+</head>
+<body style="height: 1500px">
+        <div id="box">我们正在测试默认行为</div>
+        <script>
+           box.addEventListener('touchstart',fn1,false)
+                 box.addEventListener('touchmove',fn1,false);
+                 box.addEventListener('touchend',fn1,false);
+                 function fn1(e) {
+
+                     switch (e.type){
+                         case 'touchstart':
+                             e.stopPropagation();
+                             console.log('手指按下去');
+                             break;
+                         case 'touchmove':
+                             console.log('手指在移动');
+                             break;
+                         case 'touchend':
+                             console.log('手指抬起来了');
+                             break;
+                     }
+                     this.style.background = 'red';
+                 }
+
+
+                 function fn2() {
+                     this.innerHTML = 'red';
+                 }
+                 //网页上的所有滚动条失效
+        </script>
+</body>
+</html>

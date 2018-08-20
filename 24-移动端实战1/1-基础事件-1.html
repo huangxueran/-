@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>基础事件</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+        }
+    div{
+        width: 200px;
+        height: 200px;
+        background:gold;
+        }
+</style>
+</head>
+<body>
+        <div id="box"></div>
+        <script>
+            box.ontouchstart = fn1;
+             function fn1() {
+              this.style.background = 'red';
+            };
+
+                 box.ontouchstart = fn2;
+                    function fn2() {
+                     this.style.background = 'red';
+                   };
+        </script>
+</body>
+</html>
