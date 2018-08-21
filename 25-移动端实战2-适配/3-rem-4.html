@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+                <script>
+        var html = document.querySelector('html');
+        changeRem();
+        window.addEventListener('resize',changeRem);
+        function changeRem() {
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width/10+ 'px';
+        }
+
+    </script>
+    <title>3-rem-4</title>
+    <link rel="stylesheet" href="css3/index3.css">
+
+    <script>
+        console.log( window.devicePixelRatio )
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      <title>百分比布局</title>
+      <style>
+          * {
+              margin: 0;
+              padding: 0;
+          }
+          #box{
+             height: 200px;
+             display: -webkit-flex;
+             display: flex;
+          }
+          #box div{
+             -webkit-flex: 1;
+             flex: 1;
+             border-right: 1px solid white;
+          }
+          #box div:nth-child(1){background: pink}
+          #box div:nth-child(2){background: green}
+          #box div:nth-child(3){background: gray}
+          #box div:nth-child(4){background: gold;border: none}
+      </style>
+  </head>
+  <body>
+      <div id="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </body>
+  </html>

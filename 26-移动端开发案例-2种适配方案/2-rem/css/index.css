@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  padding: 0 0.12987013rem;
+}
+#hd {
+  height: 1.97402597rem;
+}
+#hd .lc {
+  height: 100%;
+}
+#hd .fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.97402597rem;
+  background-color: #fafafa;
+}
+#hd .hd-con {
+  height: 0.97402597rem;
+}
+#hd .hd-con > div {
+  float: left;
+}
+#hd .hd-con .left-logo {
+  width: 0.81818182rem;
+  height: 0.76623377rem;
+  background: url("../img/mi.jpg");
+  background-size: 100% 100%;
+  margin-left: 0.24675325rem;
+}
+#hd .hd-con .center-search {
+  width: 7.14285714rem;
+  height: 0.45454545rem;
+  padding: 0.20779221rem 0.2987013rem;
+}
+#hd .hd-con .center-search > div {
+  border: 0.01298701rem solid #dddddd;
+  height: 0.62337662rem;
+  line-height: 0.62337662rem;
+  background: url("../img/search_df67e2f.png");
+  background-size: 100% 100%;
+  text-indent: 0.83116883rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.28571429rem;
+}
+#hd .hd-con .right-login {
+  width: 0.77922078rem;
+  height: 0.77922078rem;
+  text-align: center;
+  line-height: 0.77922078rem;
+  font-size: 0.36363636rem;
+  color: #bebea2;
+  margin-top: 0.06493506rem;
+}
+#hd .nav {
+  width: 9.74025974rem;
+  margin: auto;
+  height: 0.68831169rem;
+  line-height: 0.68831169rem;
+}
+#hd .nav li {
+  float: left;
+  padding: 0 0.42857143rem;
+  font-size: 0.32467532rem;
+}
+#hd .nav li a {
+  color: #747474;
+  display: inline-block;
+  text-decoration: none;
+}
+#hd .nav li.on a {
+  border-bottom: 0.05194805rem solid #ff0000;
+}
+#banner {
+  height: 4.83116883rem;
+  overflow: hidden;
+}
+#banner ul {
+  width: 400%;
+}
+#banner ul li {
+  width: 9.74025974rem;
+  height: 100%;
+  float: left;
+}
+.Discount {
+  display: flex;
+  height: 2.03896104rem;
+}
+.Discount div {
+  flex: 1;
+}
+.Discount div:nth-child(1) {
+  background: url("../img/tip1.jpg");
+  background-size: 100% 100%;
+}
+.Discount div:nth-child(2) {
+  background: url("../img/tip2.jpg");
+  background-size: 100% 100%;
+}
+.Discount div:nth-child(3) {
+  background: url("../img/tip3.jpg");
+  background-size: 100% 100%;
+}
+.Discount div:nth-child(4) {
+  background: url("../img/tip4.jpg");
+  background-size: 100% 100%;
+}
+.main {
+  box-shadow: 0 0 0.06493506rem #000000;
+  height: 19.48051948rem;
+  background: #fdb219;
+  padding: 0 0.12987013rem;
+}
+.main .buying {
+  text-align: center;
+  color: white;
+  padding: 0.25974026rem 0;
+}
+.main .buying h3 {
+  padding-top: 0.5974026rem;
+  font-size: 0.71428571rem;
+  font-weight: 400;
+}
+.main .buying p {
+  font-size: 0.25974026rem;
+  padding: 0.25974026rem 0;
+}
+.main .conList li {
+  height: 7.81818182rem;
+}

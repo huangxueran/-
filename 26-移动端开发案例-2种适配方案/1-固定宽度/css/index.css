@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    padding: 0 10px;
+}
+#hd{
+    height: 152px;
+}
+#hd .lc{
+    height: 100%;
+}
+#hd .fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 152px;
+    background-color: #fafafa;
+}
+#hd .hd-con{
+    height: 75px;
+}
+#hd .hd-con>div{
+    float: left;
+}
+#hd .hd-con .left-logo{
+    width: 63px;
+    height: 59px;
+    background: url("../img/mi.jpg");
+    background-size: 100% 100%;
+    margin-left: 19px;
+}
+#hd .hd-con .center-search{
+    width: 550px;
+    height: 35px;
+    padding: 16px 23px;
+}
+#hd .hd-con .center-search>div{
+    border: 1px solid #ddd;
+    height: 48px;
+    line-height: 48px;
+    background: url("../img/search_df67e2f.png");
+    background-size: 100% 100%;
+    text-indent: 64px;
+    color: rgba(0,0,0,.3);
+    font-size: 22px;
+}
+#hd .hd-con .right-login{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    color:#bebea2;
+    margin-top: 5px;
+}
+
+#hd .nav{
+    width: 750px;
+    margin: auto;
+    height: 53px;
+    line-height: 53px;
+
+}
+#hd .nav li{
+
+    float: left;
+    padding: 0 33px;
+    font-size: 25px;
+
+}
+
+#hd .nav li a{
+    color: #747474;
+    display: inline-block;
+    text-decoration: none;
+}
+#hd .nav li.on a{
+    border-bottom: 4px solid red;
+}
+
+#banner {
+    height: 372px;
+    overflow: hidden;
+}
+#banner ul{
+    width: 400%;
+}
+#banner ul li{
+    width: 750px;
+    height: 100%;
+    float: left;
+
+}
+
+.Discount{
+    display: flex;
+    height: 157px;
+}
+.Discount div{
+    flex: 1;
+}
+.Discount div:nth-child(1){
+    background: url("../img/tip1.jpg");
+    background-size: 100% 100%;
+}
+.Discount div:nth-child(2){
+    background: url("../img/tip2.jpg");
+    background-size: 100% 100%;
+}
+.Discount div:nth-child(3){
+    background: url("../img/tip3.jpg");
+    background-size: 100% 100%;
+}
+.Discount div:nth-child(4){
+    background: url("../img/tip4.jpg");
+    background-size: 100% 100%;
+}
+
+.main {
+    box-shadow: 0 0 5px #000;
+    height: 1500px;
+    background: #fdb219;
+    padding: 0 10px;
+}
+.main .buying{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+.main .buying h3{
+    padding-top: 46px;
+    font-size: 55px;
+    font-weight: 400;
+}
+.main .buying p{
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.main .conList li{
+    height: 602px;
+}
+
+
+
+
+
+
+
+
+
+

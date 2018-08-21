@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+       <script >
+             var width = window.screen.width;
+             var fixedW = 320;
+              var scale = width / fixedW;
+               var meta = document.createElement('meta');
+               meta.setAttribute('name','viewport');
+               meta.setAttribute('content','width='+fixedW+',initial-scale='+scale+', maximum-scale='+scale+', minimum-scale='+scale+', user-scalable=no');
+               document.getElementsByTagName('head')[0].appendChild(meta);
+       </script>
+  <title>2-固定宽度</title>
+   <style>
+          * {
+              margin: 0;
+              padding: 0;
+          }
+          #box{
+              height: 518px;
+              background: url("img/fixedW.png") no-repeat;
+          }
+      </style>
+  </head>
+  <body>
+  <div id="box">
+
+  </div>
+  </body>
