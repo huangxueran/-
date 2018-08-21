@@ -1,0 +1,22 @@
+jq ui
+jq moblie
+Angular UI
+xui 
+dojo
+ease ui
+mui
+wui
+bUI
+Topcoat
+Foundation
+UIKit
+Semantic UI
+Polymer
+AmazeUI
+h5ui
+淘宝：kissy
+豆瓣：arkui
+百度：tangram
+网易：NEJ
+备注:首先，先安装cnpm install --save weui
+接着，把相关的代码弄进去就可以了

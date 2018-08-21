@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>3d</title>
+    <link rel="stylesheet" href="weui.css">
+    <link rel="stylesheet" href="example.css">
+    <script src="zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+</head>
+<body>
+    <div class="page layers js_show" style="padding-top: 150px">
+        <div class="page__bd">
+            <div class="layers j_layers">
+                <div data-name="popout" class="j_layer layers__layer layers__layer_popout j_transform"><span>Popout</span></div>
+                <div data-name="mask" class="j_layer layers__layer layers__layer_mask j_transform"><span>Mask</span></div>
+                <div data-name="navigation" class="j_layer layers__layer layers__layer_navigation j_transform"><span>Navigation</span></div>
+                <div data-name="content" class="j_layer layers__layer layers__layer_content j_transform"><span>Content</span></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" class="layers js_show">
+        $(function(){
+            var $layers = $(".layers__layer"), $infos = $(".j_info"),
+                hideTimeout;
+
+            function showInfo(name){
+                $infos.filter("[data-for='" + name + "']").show().siblings().hide();
+            }
+            function hideIfLayerShowing(){
+                if($layers.filter(".j_transform").length != $layers.length){ // 展示中
+                    showInfo("normal");
+                    $layers.addClass("j_transform");
+
+                    clearTimeout(hideTimeout);
+                    hideTimeout = setTimeout(function(){
+                        $layers.removeClass("j_hide");
+                    }, 300);
+                    return true;
+                }
+                return false;
+            }
+            $layers.on("transitionend webkitTransitionend", function(){
+                var that = this;
+                if(that.classList.contains("j_transform")){
+                    setTimeout(function(){
+                        that.classList.remove("j_pic");
+                    }, 500);
+                }else{
+                    that.classList.add("j_pic");
+                }
+            });
+            setTimeout(function(){
+                $layers.addClass("j_transform");
+
+                $(".j_layer").on("click", function(e){
+                    if(hideIfLayerShowing()) return;
+
+                    var target = this;
+                    if(target.classList.contains("j_layer")){
+                        clearTimeout(hideTimeout);
+
+                        var name;
+                        target = $(target);
+                        name = target.data("name");
+                        showInfo(name);
+
+                        target.removeClass("j_transform").siblings().addClass("j_hide");
+                    }
+                });
+            }, 500);
+        });
+    </script>
+</body>
+</html>
